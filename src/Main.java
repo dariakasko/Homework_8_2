@@ -16,7 +16,10 @@ public class Main {
         for (Printable arrayElement : arrayOfCorrespondense) {
             arrayElement.print();
         }
+        System.out.println("\nWork of printMagazines method: ");
         Magazine.printMagazines(arrayOfCorrespondense);
+
+        System.out.println("\nWork of printBooks method using instanceof: ");
         Book.printBooks(arrayOfCorrespondense);
     }
 }
