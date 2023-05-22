@@ -19,15 +19,12 @@ public class Book implements Printable{
     }
     @Override
     public void print() {
-        System.out.println("Book is printed");
-    }
-    public static void printBooks() {
-        System.out.println("Work of Print Books method");
+        System.out.println(bookName);
     }
     public static void printBooks(Printable[] printable) {
         for (Printable arrayElement : printable) {
             if (arrayElement instanceof Book) {
-                System.out.println(((Book) arrayElement).bookName);
+                arrayElement.print();
             }
         }
     }

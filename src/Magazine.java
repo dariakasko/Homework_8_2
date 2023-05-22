@@ -19,12 +19,12 @@ public class Magazine implements Printable{
     }
     @Override
     public void print() {
-        System.out.println("Magazine is printed");
+        System.out.println(magazineName);
     }
     public static void printMagazines(Printable[] printable) {
         for (Printable arrayElement : printable) {
             if (arrayElement.getClass() == Magazine.class) {
-                System.out.println(((Magazine) arrayElement).magazineName);
+                arrayElement.print();
             }
         }
     }
